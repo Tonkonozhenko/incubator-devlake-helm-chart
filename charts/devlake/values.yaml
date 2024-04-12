@@ -241,6 +241,9 @@ lake:
   deployment:
     extraLabels: {}
 
+  volumes: []
+  volumeMounts: []
+
 ui:
   image:
     repository: devlake.docker.scarf.sh/apache/devlake-config-ui
@@ -311,6 +314,9 @@ ui:
 
   deployment:
     extraLabels: {}
+
+  volumes: []
+  volumeMounts: []
 
 # alpine image for some init containers
 alpine:
