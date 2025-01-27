@@ -240,6 +240,7 @@ lake:
 
   deployment:
     extraLabels: {}
+    annotations: {}
 
   volumes: []
   volumeMounts: []
@@ -314,6 +315,7 @@ ui:
 
   deployment:
     extraLabels: {}
+    annotations: {}
 
   volumes: []
   volumeMounts: []

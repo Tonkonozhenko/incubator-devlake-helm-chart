@@ -25,6 +25,7 @@ metadata:
     {{- with .Values.ui.deployment.extraLabels }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
+  annotations: {{ .Values.ui.deployment.annotations | toYaml | nindent 4 }}
 spec:
   replicas: 1
   {{- with .Values.ui.strategy }}
@@ -133,6 +134,7 @@ metadata:
   {{- with .Values.lake.deployment.extraLabels }}
   {{- toYaml . | nindent 4 }}
   {{- end }}
+  annotations: {{ .Values.lake.deployment.annotations | toYaml | nindent 4 }}
 spec:
   replicas: 1
   {{- with .Values.lake.strategy }}
